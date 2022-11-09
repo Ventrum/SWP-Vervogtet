@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using static Data_Annotations_EF.models.DB.ORM_Manager;
 
 namespace Data_Annotations_EF.models.DB;
-
 public class ORM_Context : DbContext
     {
         public virtual DbSet<Evaluation> Evaluations { get; set; }
@@ -22,7 +22,7 @@ public class ORM_Context : DbContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        const string constring = "Server=localhost;database=orm_test_5a;user=root;password=SHW_Destroyer02";
+        const string constring = $"Server=localhost;database=orm_test_5a;user=root;password=SHW_Destroyer02";
         optionsBuilder.UseSqlServer(constring);
     }
 }
