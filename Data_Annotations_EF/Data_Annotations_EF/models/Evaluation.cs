@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-
-namespace FluentAPI_ORM.models
+namespace Data_Annotations_EF.models
 {
     public class Evaluation
     {
