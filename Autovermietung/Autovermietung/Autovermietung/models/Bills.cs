@@ -22,10 +22,10 @@ namespace Autovermietung.models
             // default ctor
         }
 
-        public Bills(int billid, int carid, DateTime startdate, 
+        public Bills(int billid, int carid, DateTime startdate,
             DateTime enddate, double totalprice, Customer customer)
         {
-            BillID = billid; CarID = carid; 
+            BillID = billid; CarID = carid;
             StartDate = startdate; EndDate = enddate; TotalPrice = totalprice;
             Customer = customer;
         }

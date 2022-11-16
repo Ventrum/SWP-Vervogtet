@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_Annotations_EF.models
+namespace Autovermietung.models
 {
     public class CarBill
     {
@@ -13,10 +13,10 @@ namespace Data_Annotations_EF.models
         public virtual Car Car { get; set; }
         public virtual CarBill Bill { get; set; }
         public CarBill(decimal discount) { Discount = discount; }
-
+        public CarBill() : this(0.0m) { }
         public override string ToString()
         {
-            return this.CarBillId + "\t" + this.Discount;
+            return "ID: " + this.CarBillId + "\t" + this.Discount;
         }
     }
 }

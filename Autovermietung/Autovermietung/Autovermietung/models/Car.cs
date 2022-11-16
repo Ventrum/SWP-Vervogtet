@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_Annotations_EF.models
+namespace Autovermietung.models
 {
     public class Car
     {
@@ -17,7 +17,7 @@ namespace Data_Annotations_EF.models
         public int AmountSeats { get; set; }
         public int SpaceSuitcases { get; set; }
 
-        public virtual List<CarBill> CarBills{ get; set; }
+        public virtual List<CarBill> CarBills { get; set; }
 
         public Car(string type, string brand, string model, decimal price, bool hasAirCondition, int amountSeats, int SpaceSuitcases)
         {
@@ -37,7 +37,7 @@ namespace Data_Annotations_EF.models
 
         public override string ToString()
         {
-            return this.CarId + "\t" + this.Type + "\t" + this.Brand + "\t" + this.Model + "\t" + this.Price + "\t" + this.HasAirCondition + "\t" + this.AmountSeats + "\t" + this.SpaceSuitcases;
+            return "ID: " + this.CarId + "\ttpye: " + this.Type + "\tbrand: " + this.Brand + "\tmodel: " + this.Model + "\tprice: " + this.Price + "\thas air condition: " + this.HasAirCondition + "\tamount of Seats: " + this.AmountSeats + "\tspace for suitcases: " + this.SpaceSuitcases;
         }
     }
 }
