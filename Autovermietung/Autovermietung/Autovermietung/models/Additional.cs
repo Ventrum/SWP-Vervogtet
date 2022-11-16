@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Autovermietung.models
 {
-    internal class Additional
+    public class Additional
     {
     }
 }

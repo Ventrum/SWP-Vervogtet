@@ -17,7 +17,7 @@ namespace Data_Annotations_EF.models
         public int AmountSeats { get; set; }
         public int SpaceSuitcases { get; set; }
 
-        //virtual List<CarBill> CarBills;
+        public virtual List<CarBill> CarBills{ get; set; }
 
         public Car(string type, string brand, string model, decimal price, bool hasAirCondition, int amountSeats, int SpaceSuitcases)
         {
