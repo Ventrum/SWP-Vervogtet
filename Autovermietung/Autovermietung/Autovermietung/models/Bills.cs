@@ -31,7 +31,7 @@ namespace Autovermietung.models
         }
         public override string ToString()
         {
-            return $"{BillID} {CarID} \n{StartDate} - {EndDate} \n {TotalPrice} \n{Customer}";
+            return $"{BillID} {CarID} \n{StartDate} - {EndDate} \n {TotalPrice}€ \n{Customer}";
         }
     }
 }
