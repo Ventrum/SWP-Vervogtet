@@ -11,7 +11,7 @@ namespace Autovermietung.models.DB
         private string _server = "localhost";
         private string _database = "orm_autovermietung";
         private string user = "root";
-        private string pw = "SHW_Destroyer02";
+        private string pw = "lol";
 
         public string Server { get => _server; set => _server = value; }
         public string Database { get => _database; set => _database = value; }
