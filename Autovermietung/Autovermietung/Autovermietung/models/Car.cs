@@ -13,19 +13,19 @@ namespace Data_Annotations_EF.models
         public string Brand { get; set; }
         public string Model { get; set; }
         public decimal Price { get; set; }
-        public bool HasAirCondition { get; set; }
+        public bool IsFourDoor { get; set; }
         public int AmountSeats { get; set; }
         public int SpaceSuitcases { get; set; }
 
         //virtual List<CarBill> CarBills;
 
-        public Car(string type, string brand, string model, decimal price, bool hasAirCondition, int amountSeats, int SpaceSuitcases)
+        public Car(string type, string brand, string model, decimal price, bool isFourDoor, int amountSeats, int SpaceSuitcases)
         {
             this.Type = type;
             this.Brand = brand;
             this.Model = model;
             this.Price = price;
-            this.HasAirCondition = hasAirCondition;
+            this.IsFourDoor = isFourDoor;
             this.AmountSeats = amountSeats;
             this.SpaceSuitcases = SpaceSuitcases;
         }
@@ -37,7 +37,7 @@ namespace Data_Annotations_EF.models
 
         public override string ToString()
         {
-            return this.CarId + "\t" + this.Type + "\t" + this.Brand + "\t" + this.Model + "\t" + this.Price + "\t" + this.HasAirCondition + "\t" + this.AmountSeats + "\t" + this.SpaceSuitcases;
+            return this.CarId + "\t" + this.Type + "\t" + this.Brand + "\t" + this.Model + "\t" + this.Price + "\t" + this.IsFourDoor + "\t" + this.AmountSeats + "\t" + this.SpaceSuitcases;
         }
     }
 }
