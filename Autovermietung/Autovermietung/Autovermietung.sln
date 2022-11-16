@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autovermietung", "Autovermietung\Autovermietung.csproj", "{2BAA5D54-D851-4309-8EBC-BC4881C5014E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BAA5D54-D851-4309-8EBC-BC4881C5014E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BAA5D54-D851-4309-8EBC-BC4881C5014E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BAA5D54-D851-4309-8EBC-BC4881C5014E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BAA5D54-D851-4309-8EBC-BC4881C5014E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
