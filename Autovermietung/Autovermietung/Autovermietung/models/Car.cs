@@ -13,19 +13,19 @@ namespace Autovermietung.models
         public string Brand { get; set; }
         public string Model { get; set; }
         public decimal Price { get; set; }
-        public bool HasAirCondition { get; set; }
+        public bool IsFourDoor { get; set; }
         public int AmountSeats { get; set; }
         public int SpaceSuitcases { get; set; }
 
         public virtual List<CarBill> CarBills { get; set; }
 
-        public Car(string type, string brand, string model, decimal price, bool hasAirCondition, int amountSeats, int SpaceSuitcases)
+        public Car(string type, string brand, string model, decimal price, bool isFourDoor, int amountSeats, int SpaceSuitcases)
         {
             this.Type = type;
             this.Brand = brand;
             this.Model = model;
             this.Price = price;
-            this.HasAirCondition = hasAirCondition;
+            this.IsFourDoor = isFourDoor;
             this.AmountSeats = amountSeats;
             this.SpaceSuitcases = SpaceSuitcases;
         }
