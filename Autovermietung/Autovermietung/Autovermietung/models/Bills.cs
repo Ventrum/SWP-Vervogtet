@@ -14,7 +14,9 @@ namespace Autovermietung.models
         public DateTime EndDate { get; set; }
         public double TotalPrice { get; set; }
 
-        public Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
+        public virtual List<Additional> Additionals { get; set; }
+        public virtual List<CarBill> CarBills { get; set; }
 
         // ctors
         public Bills() : this(0, 0, DateTime.Now, DateTime.Now, 0.0, null)

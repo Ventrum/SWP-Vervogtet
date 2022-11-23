@@ -20,14 +20,14 @@ namespace Autovermietung.models
         public string Email { get; set; }
         public DateTime BirthDate { get; set; }
 
-        public List<Bills> Bills { get; set; }
+        public virtual List<Bills> Bills { get; set; }
         // ctors
         public Customer() : this("", "", "", "", "", "", "", "", "", DateTime.Now, null)
         {
             // default ctor
         }
-        
-        public Customer(string firstname, string lastname, string street, string? streetrn, 
+
+        public Customer(string firstname, string lastname, string street, string? streetrn,
             string zipcode, string city, string country, string phonenr,
             string email, DateTime bday, List<Bills> bills)
         {
@@ -38,8 +38,8 @@ namespace Autovermietung.models
         public override string ToString()
         {
             return $"{FirstName} {LastName}" +
-                $"{BirthDate}" + 
-                $"{((StreetNr != null) ? $" {StreetNr}" : "") }"
+                $"{BirthDate}" +
+                $"{((StreetNr != null) ? $" {StreetNr}" : "")}"
             + $", {ZipCode} {City}, {Country}" +
             $"{Phone} {Email} \n{Bills}"
             ;
