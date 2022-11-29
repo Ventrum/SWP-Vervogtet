@@ -20,20 +20,20 @@ namespace Autovermietung.models
         public string Email { get; set; }
         public DateTime BirthDate { get; set; }
 
-        public virtual List<Bills> Bills { get; set; }
+        public virtual List<Bill> Bills { get; set; } = new List<Bill>();
         // ctors
-        public Customer() : this("", "", "", "", "", "", "", "", "", DateTime.Now, null)
+        public Customer() : this("", "", "", "", "", "", "", "", "", DateTime.Now)
         {
             // default ctor
         }
 
         public Customer(string firstname, string lastname, string street, string? streetrn,
             string zipcode, string city, string country, string phonenr,
-            string email, DateTime bday, List<Bills> bills)
+            string email, DateTime bday)
         {
             FirstName = firstname; LastName = lastname; Street = street; StreetNr = streetrn;
             ZipCode = zipcode; City = city; Country = country; Phone = phonenr; Email = email;
-            BirthDate = bday; Bills = bills;
+            BirthDate = bday;
         }
         public override string ToString()
         {

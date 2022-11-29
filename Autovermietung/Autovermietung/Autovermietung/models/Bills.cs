@@ -6,34 +6,30 @@ using System.Threading.Tasks;
 
 namespace Autovermietung.models
 {
-    public class Bills
+    public class Bill
     {
         public int BillID { get; set; }
-        public int CarID { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public double TotalPrice { get; set; }
 
         public virtual Customer Customer { get; set; }
-        public virtual List<Additional> Additionals { get; set; }
-        public virtual List<CarBill> CarBills { get; set; }
+        public virtual List<Additional> Additionals { get; set; } = new List<Additional>();
+        public virtual List<CarBill> CarBills { get; set; } = new List<CarBill>();
 
         // ctors
-        public Bills() : this(0, 0, DateTime.Now, DateTime.Now, 0.0, null)
+        public Bill() : this(DateTime.Now, DateTime.Now)
         {
             // default ctor
         }
 
-        public Bills(int billid, int carid, DateTime startdate,
-            DateTime enddate, double totalprice, Customer customer)
+        public Bill(DateTime startdate,
+            DateTime enddate)
         {
-            BillID = billid; CarID = carid;
-            StartDate = startdate; EndDate = enddate; TotalPrice = totalprice;
-            Customer = customer;
+            StartDate = startdate; EndDate = enddate; 
         }
         public override string ToString()
         {
-            return $"{BillID} {CarID} \n{StartDate} - {EndDate} \n {TotalPrice}€ \n{Customer}";
+            return $"{BillID}  \n{StartDate} - {EndDate} \n{Customer}";
         }
     }
 }

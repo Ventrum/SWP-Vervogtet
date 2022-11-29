@@ -12,7 +12,7 @@ namespace Autovermietung.models
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int AvailableAmount { get; set; }
-        public virtual List<Bills> Bills { get; set; }
+        public virtual List<Bill> Bills { get; set; } = new List<Bill>();
         public Additional(string name, decimal price, int availableAmount)
         {
             this.Name = name;

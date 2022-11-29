@@ -17,7 +17,7 @@ namespace Autovermietung.models
         public int AmountSeats { get; set; }
         public int SpaceSuitcases { get; set; }
 
-        public virtual List<CarBill> CarBills { get; set; }
+        public virtual List<CarBill> CarBills { get; set; } = new List<CarBill>();
 
         public Car(string type, string brand, string model, decimal price, bool HasAirCondition, int amountSeats, int SpaceSuitcases)
         {
